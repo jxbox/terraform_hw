@@ -12,7 +12,7 @@ on:
 
 env:
   DOCKER_REPO: jx-cloud/my-nginx
-  IMAGE_TAG: v2
+  IMAGE_TAG: ${{ github.sha}}
 jobs:
 
   build:

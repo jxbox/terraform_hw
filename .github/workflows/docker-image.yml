@@ -25,9 +25,8 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: docker/build-push-action
-        run: |
-        echo ${DOCKER_REPO}:${IMAGE_TAG}
-        docker build -t swr.cn-north-4.myhuaweicloud.com/${DOCKER_REPO}:${IMAGE_TAG} .
+        run: echo ${DOCKER_REPO}:${IMAGE_TAG}
+        #docker build -t swr.cn-north-4.myhuaweicloud.com/${DOCKER_REPO}:${IMAGE_TAG} .
       # Runs login swr
       #- name: docker/login-action@v3
        # with:

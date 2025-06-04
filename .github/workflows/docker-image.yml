@@ -31,7 +31,7 @@ jobs:
        # with:
       ##    username: cn-north-4@HPUAPZ498EOIYCXORR4X
        #   password: ${{ secrets.MY_SRW_SK }}
-      - name: docker login v1 
+      - name: docker login v2vd3
         run: docker login -u cn-north-4@HPUAPZ498EOIYCXORR4X -p ${{ secrets.MY_SWR_SK }}  swr.cn-north-4.myhuaweicloud.com
       # Runs a set of commands using the runners shell
       - name: docker push 
